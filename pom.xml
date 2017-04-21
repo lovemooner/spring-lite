@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>love.celery</groupId>
-    <artifactId>springdemo</artifactId>
+    <artifactId>spring</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
     <modules>
@@ -27,16 +27,18 @@
             <version>${spring.version}</version>
         </dependency>
         <!-- springframe end -->
+        <!--hibernate-->
         <dependency>
-            <groupId>javax.servlet.jsp.jstl</groupId>
-            <artifactId>javax.servlet.jsp.jstl-api</artifactId>
-            <version>1.2.1</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
-            <groupId>taglibs</groupId>
-            <artifactId>standard</artifactId>
-            <version>1.1.2</version>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
         </dependency>
+
         <dependency>
             <groupId>tomcat</groupId>
             <artifactId>servlet-api</artifactId>
@@ -49,11 +51,7 @@
             <version>5.5.23</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>commons-fileupload</groupId>
-            <artifactId>commons-fileupload</artifactId>
-            <version>1.3.1</version>
-        </dependency>
+
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
@@ -71,23 +69,12 @@
             <artifactId>c3p0</artifactId>
             <version>0.9.1.2</version>
         </dependency>
-
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql.jdbc.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-orm</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>${hibernate.version}</version>
-        </dependency>
 
     </dependencies>
 
