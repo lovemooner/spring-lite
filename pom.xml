@@ -15,9 +15,6 @@
     <properties>
         <spring.version>4.0.4.RELEASE</spring.version>
         <hibernate.version>4.3.5.Final</hibernate.version>
-        <slf4j.version>1.6.1</slf4j.version>
-        <mysql.jdbc.version>5.1.13</mysql.jdbc.version>
-        <common-logging.version>1.1.1</common-logging.version>
     </properties>
 
     <dependencies>
